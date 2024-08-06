@@ -25,6 +25,8 @@ label_information = {
 # Memuat model yang sudah dilatih
 model = tf.keras.models.load_model("./my_model_cnn_percobaan6.h5")
 
+st.title("CNN Model for Skin Disease Classification")
+
 # untuk menyesuaikan threshold
 confidence_threshold = 0.7
 
