@@ -25,10 +25,8 @@ label_information = {
 # Memuat model yang sudah dilatih
 model = tf.keras.models.load_model("./my_model_cnn_percobaan6.h5")
 
-st.title("CNN Model for Skin Disease Classification")
-
-# Slider untuk menyesuaikan threshold
-confidence_threshold = st.slider('Threshold confidence untuk menentukan "bukan kulit"', 0.0, 1.0, 0.7)  # Menambahkan slider untuk menyesuaikan threshold
+# untuk menyesuaikan threshold
+confidence_threshold = 0.7
 
 uploaded_file = st.file_uploader("Pilih file gambar")
 output = None
